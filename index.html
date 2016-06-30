@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Visualizing Beer</title>
+  <meta name="Nathan" content="Visualizing Beer">
+  <meta name="description" content="a data visualization of craft beer">
+  <meta name="keywords" content="beer,data visualization, data, craft beer">
+  <style type="text/css">
+   .axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+#legend{
+	width: 155px;
+	height: 350px;
+	float: right;
+
+}
+
+#chart{
+	float: left;
+	width: 800px;
+	height: 550px;
+
+}
+#wrapper{
+	width: 1000px;
+	height: 550px;
+
+}
+#legendTitle{
+  float:right;
+
+}
+
+#legendSub1{
+	text-align:center;
+
+}
+
+#chartTitle{
+	margin-left:50px;
+
+}
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  
+  </head>
+  <body>
+  
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <div id = "wrapper">
+  	<div id= "chartTitle" style= "font-size: 16px" style= "font-family: Sans-Serif">Beer Visualization by IBUs and Alcohol by Volume</div>
+  		<div id= "legendTitle">
+  			<div id ="legendSub1" style= "font-size: 12px"> Beer Styles</div>
+  			<div id = "legendSub2" style = "font-size: 10px"> click to select beers by style </div>
+		</div>  
+  	<div id= "chart"></div>
+  	<div id="legend"></div>
+  </div>
+  <script src="beervis.js"></script>
+  
+  
+  
+  </body>
+</html>
